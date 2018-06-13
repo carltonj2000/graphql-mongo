@@ -1,7 +1,11 @@
 import express from "express";
 import graphqlHTTP from "express-graphql";
+import mongoose from "mongoose";
 
 import schema from "./schema";
+
+mongoose.Promise = global.Promise;
+mongoose.connect("mongodb://localhost/gql_db");
 
 const app = express();
 
