@@ -7,4 +7,4 @@ video series.
 The first commit:
 
 - can be used as a minimal GraphQL server setup (aka boiler plate),
-- shows a minimal babel so you can use new JS features with node
+- shows a minimal babel setup in order to use new JS features with node
