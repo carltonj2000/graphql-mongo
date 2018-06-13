@@ -11,8 +11,7 @@ The first commit:
 
 Run mongo via `docker run -p 27017:27017 mongo`.
 
-Few mongodb shell commands:
+Few mongodb commands:
 
 - show <dbs | collections>
 - db.<collection>.find()
-- more [here](https://docs.mongodb.com/manual/reference/mongo-shell/)
