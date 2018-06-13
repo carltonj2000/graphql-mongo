@@ -11,6 +11,13 @@ const typeDefs = `
     hello(msg: String!): String
     allProducts: [Product]
   }
+  input ProductInput {
+    name: String!
+    qty: Int!
+  }
+  type Mutation {
+    createProduct(input: ProductInput) : Product
+  }
 `;
 
 export default makeExecutableSchema({

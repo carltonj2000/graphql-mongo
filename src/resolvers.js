@@ -21,5 +21,13 @@ export const resolvers = {
     allProducts(root, args, context, info) {
       return products;
     }
+  },
+  Mutation: {
+    createProduct(_, args) {
+      let { input } = args;
+      input._id = "123";
+      products.push(input);
+      return input;
+    }
   }
 };
